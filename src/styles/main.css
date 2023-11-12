@@ -1,0 +1,212 @@
+@import './markdown.css';
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PalanquinDark-Regular";
+  src: url("../assets/fonts/PalanquinDark-Regular.ttf") format("truetype");
+} 
+@font-face {
+  font-family: "PalanquinDark-Medium";
+  src: url("../assets/fonts/PalanquinDark-Medium") format("truetype");
+} 
+@font-face {
+  font-family: "PalanquinDark-SemiBold";
+  src: url("../assets/fonts/PalanquinDark-SemiBold.ttf") format("truetype");
+} 
+@font-face {
+  font-family: "PalanquinDark-Bold";
+  src: url("~/assets/fonts/PalanquinDark-Bold.ttf") format("truetype");
+} 
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 1 999;
+} 
+@font-face {
+  font-family: "ReadexPro";
+  src: url("../assets/fonts/ReadexPro-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 1 999;
+} 
+
+
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+/**
+  * body rtl
+  */
+ body[dir='rtl'],  body[dir='rtl'] #app, .ar {
+  font-family: 'ReadexPro', sans-serif!important;
+
+}
+
+
+html.dark {
+  background: #121212;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'ReadexPro';
+}
+
+body[dir='rtl'] h1,body[dir='rtl'] h2,body[dir='rtl'] h3,body[dir='rtl'] h4,body[dir='rtl'] h5,body[dir='rtl'] h6 {
+  font-family:'ReadexPro';
+}
+
+#nprogress {
+  pointer-events: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+.prose{
+margin-bottom:40px;
+}
+#nprogress .bar {
+ @apply bg-primary-300 ;
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+/*******************
+********************
+***** variants *****
+********************
+*******************/
+
+.primary:not(.outlined) {
+  @apply bg-primary-500  hover:bg-primary-600  border-primary-500 
+}
+.default:not(.outlined){
+ @apply  bg-slate-500 hover:bg-slate-600  border-slate-500 
+}
+.secondary:not(.outlined) {
+  @apply bg-secondary-500 hover:bg-secondary-600 border-secondary-500
+}
+
+.info:not(.outlined){
+  @apply bg-blue-500 hover:bg-blue-600 border-blue-500
+}
+.warning:not(.outlined) {
+  @apply bg-amber-500 hover:bg-amber-600 border-amber-500
+}
+.error:not(.outlined) {
+  @apply bg-red-500 hover:bg-red-600 border-red-500
+}
+.success:not(.outlined) {
+  @apply bg-green-500 hover:bg-green-600 border-green-500
+}
+
+
+/**** outlined ****/
+.outlined {
+  @apply border-2 !bg-transparent hover:bg-transparent
+}
+.primary.outlined {
+  @apply border-primary-500   !text-primary-500 hover:!border-primary-600 hover:!text-primary-600 dark:text-primary-400
+}
+.secondary.outlined {
+  @apply border-secondary-500 !text-secondary-500 hover:!border-secondary-600 hover:!text-secondary-600
+}
+.info.outlined {
+  @apply border-blue-500 !text-blue-500 hover:!border-blue-600 hover:!text-blue-600
+}
+.warning.outlined {
+  @apply border-amber-500 !text-amber-500 hover:!border-amber-600 hover:!text-amber-600
+}
+.error.outlined {
+  @apply border-red-500 !text-red-500 hover:!border-red-600 hover:!text-red-600
+}
+.success.outlined {
+  @apply border-green-500 !text-green-500 hover:!border-green-600 hover:!text-green-600
+}
+.default.outlined {
+  @apply border-gray-500 !text-gray-500 hover:!border-gray-600 hover:!text-gray-600
+}
+
+/**** smooth ****/
+.smooth, .outlined{
+ @apply !shadow-none 
+}
+
+.primary.smooth {
+  @apply bg-primary-200 border-primary-200 dark:bg-primary-700 dark:border-primary-700 hover:bg-primary-300 !text-primary-500 dark:!text-primary-200 hover:!text-primary-600
+}
+.secondary.smooth {
+  @apply bg-secondary-200 border-secondary-200 dark:bg-secondary-900 dark:border-secondary-900 hover:bg-secondary-300 !text-secondary-500 hover:!text-secondary-600
+}
+.info.smooth {
+  @apply bg-blue-200 dark:bg-blue-900 border-blue-200 dark:border-blue-900 hover:bg-blue-300 !text-blue-500 hover:!text-blue-600
+}
+.warning.smooth {
+  @apply bg-amber-200 dark:bg-amber-900 border-amber-200 dark:border-amber-900 hover:bg-amber-300 !text-amber-600 dark:!text-amber-400 hover:!text-amber-600
+}
+.error.smooth {
+  @apply bg-red-200 dark:bg-red-900 border-red-200 dark:border-red-900 hover:bg-red-300 !text-red-500 hover:!text-red-600
+}
+.success.smooth {
+  @apply bg-green-200 dark:bg-green-900 border-green-200 dark:border-green-900 hover:bg-green-300 !text-green-500 hover:!text-green-600
+}
+.default.smooth {
+  @apply bg-gray-300 dark:bg-gray-800 border-gray-300 dark:border-gray-800 hover:bg-gray-300 !text-gray-500 dark:!text-gray-300 hover:!text-gray-600
+}
+
+/***** text *****/
+
+.text{
+  @apply !bg-transparent border !border-transparent hover:border hover:bg-transparent !shadow-none
+}
+.text.primary {
+  @apply !text-primary-500 hover:text-primary-600 hover:border-primary-100 
+}
+.text.secondary {
+  @apply !text-secondary-500 hover:text-secondary-600 hover:border-secondary-200
+}
+.text.info {
+  @apply !text-blue-500 hover:text-blue-600 hover:border-blue-200
+}
+.text.warning {
+  @apply !text-amber-500 hover:text-amber-600 hover:border-amber-200
+}
+.text.error {
+  @apply !text-red-500 hover:text-red-600 hover:border-red-200
+}
+.text.success {
+  @apply !text-green-500 hover:text-green-600 hover:border-green-200
+}
+.text.default {
+  @apply !text-gray-500 hover:text-gray-600 hover:border-gray-200
+}
+
+
+/***** link *****/
+
+.link{
+  @apply bg-transparent border-0 underline hover:!underline hover:underline-offset-2 hover:!bg-transparent hover:border-0 
+}
+
+
+
+
+.centered {
+  @apply flex justify-center items-center
+}
+
+
+
+

@@ -1,0 +1,83 @@
+auth:
+  email: Email
+  email-placeholder: Email or phone number
+  forgot: Forgot password?
+  login: Login
+  logout: Logout
+  no-account: Don't have an account?
+  password: Password
+  register: Register
+  register-fail: Register failed
+  register-success: Register successfully
+  remember: Remember me
+  reset: Reset password
+  reset-fail: Reset password failed
+  reset-link: Reset password link sent
+  reset-sent: Reset password link sent to your email
+  reset-success: Reset password successfully
+  username: Username
+button:
+  about: About
+  back: Back
+  change_lang: Change language
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+hero:
+  cta: Get started
+  desc: >-
+    A rich template with many components, which are built with Tailwind CSS And
+    Vue.
+  github: github
+  subtitle: Vue.js 3 template
+home:
+  example:
+    alert: This is a warning alert, you can use it to show a warning message
+    password: password
+    rememberMe: Remember me
+intro:
+  aka: Also known as
+  desc: Opinionated Vite Starter Template
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  whats-your-name: What's your name?
+not-found: Not found
+sidebar:
+  calendar: Calendar
+  components: Components
+  dashboard: Dashboard
+  home: Home
+  projects: Projects
+  reports: Reports
+  team: Team
+features:
+  name: Features
+  using-the-new-tools:
+    title: Using the new tools
+    description: Using the new versions and new tools like Vue 3, Vite 2, pnpm, ESBuild
+  file-based-routing:
+    title: File based routing
+    description: Using the vite-plugin-pages plugin to create file based routing
+  components-auto-importing:
+    title: Components auto importing
+    description: Using the unplugin-vue-components plugin to auto import components
+  state-management-via-pinia:
+    title: State Management via Pinia
+    description: Manage your state with the new tool Pinia
+  layout-system:
+    title: Layout system
+    description: vite-plugin-vue-layouts plugin helps you to create layouts
+  use-icons-from-carbon-icons:
+    title: Use icons from carbon-icons
+    description: Using the unplugin-icons plugin to use icons from carbon-icons
+  i18n-ready:
+    title: I18n ready
+    description: vue-i18n plugin is used to support i18n based on YAML files
+  other-tools:
+    title: Other tools
+    description: ... and many more tools such as TypeScript, Prettier, ESLint, etc.
+news:
+  name: News
+  featured: Featured News
+      
